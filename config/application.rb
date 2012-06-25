@@ -79,6 +79,6 @@ module MarkdownSample
       RubyPython.start( python_exe: "python" )
     end
 =end
-    RubyPython.start( python_exe: "python" )
+#    RubyPython.start( python_exe: "python" )
   end
 end
