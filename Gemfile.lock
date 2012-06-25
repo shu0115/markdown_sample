@@ -164,7 +164,6 @@ DEPENDENCIES
   pygments.rb (~> 0.2.13)
   rails (= 3.2.6)
   redcarpet
-  rubypython (~> 0.5.3)
   sass-rails (~> 3.2.3)
   sqlite3
   thin
