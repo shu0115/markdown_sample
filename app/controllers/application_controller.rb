@@ -61,10 +61,9 @@ class ApplicationController < ActionController::Base
   # show_markdown #
   #---------------#
   def show_markdown( text )
-    options = [ :hard_wrap, :filter_html, :autolink, :no_intraemphasis, :fenced_code, :gh_blockcode ]
-#    Markdown.new( text, *options ).to_html.html_safe
-    markdown = Redcarpet::Markdown.new( Redcarpet::Render::HTML,:autolink => true, :space_after_headers => true )
-    print "[ markdown.render( text ) ] : " ; p markdown.render( text ).class.name ;
+    html_render = HtmlWithPygments.new( hard_wrap: true, filter_html: true )
+    markdown = Redcarpet::Markdown.new( html_render, autolink: true, fenced_code_blocks: true )
+
     return markdown.render( text )
   end
 
