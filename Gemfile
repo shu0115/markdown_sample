@@ -42,19 +42,18 @@ group :production do
 end
 
 # Utility
-#gem 'kaminari'
+gem 'kaminari'
 
 # For OmniAuth
-#gem 'omniauth-twitter'
+gem 'omniauth-twitter'
 
 # Development Only
 group :development do
-#group :development, :test do
-#  gem 'omniauth-scaffold'
-#  gem 'custom-template'
+  gem 'omniauth-scaffold'
+  gem 'custom-template'
   gem 'sqlite3'
 end
 
 # For Markdown
-#gem 'redcarpet'
-#gem "pygments.rb", "~> 0.2.13"
+gem 'redcarpet'
+gem "pygments.rb", "~> 0.2.13"
