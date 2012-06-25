@@ -5,9 +5,6 @@ gem 'rails', '3.2.6'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -45,17 +42,19 @@ group :production do
 end
 
 # Utility
-gem 'kaminari'
+#gem 'kaminari'
 
 # For OmniAuth
-gem 'omniauth-twitter'
+#gem 'omniauth-twitter'
 
 # Development Only
 group :development do
-  gem 'omniauth-scaffold'
-  gem 'custom-template'
+#group :development, :test do
+#  gem 'omniauth-scaffold'
+#  gem 'custom-template'
+  gem 'sqlite3'
 end
 
 # For Markdown
-gem 'redcarpet'
-gem "pygments.rb", "~> 0.2.13"
+#gem 'redcarpet'
+#gem "pygments.rb", "~> 0.2.13"
