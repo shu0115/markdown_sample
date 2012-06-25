@@ -57,3 +57,4 @@ end
 # For Markdown
 gem 'redcarpet'
 gem "pygments.rb", "~> 0.2.13"
+gem "rubypython", "~> 0.5.3"

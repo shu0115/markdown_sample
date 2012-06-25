@@ -16,4 +16,5 @@
 
 # Add
 .DS_Store
+/vendor/bundle
 /config/initializers/local_setting.rb
