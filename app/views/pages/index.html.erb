@@ -15,7 +15,7 @@
   <tr>
     <td><%= page.user_id %></td>
     <td><%= page.title %></td>
-    <td><%= page.content %></td>
+    <td><%= page.content.to_s.slice(0..50) %></td>
     <td><%= link_to t( "menu.show", default: "Show" ), action: "show", id: page.id %></td>
     <td><%= link_to t( "menu.edit", default: "Edit" ), action: "edit", id: page.id %></td>
     <td><%= link_to t( "menu.destroy", default: "Delete" ), { action: "destroy", id: page.id }, onclick: "return confirm('本当に削除してよろしいですか？');" %></td>

@@ -70,15 +70,5 @@ module MarkdownSample
 
     # For Heroku
     config.assets.initialize_on_precompile = false
-#    RubyPython.configure :python_exe => 'python2.7'
-#    RubyPython.configure :python_exe => 'python'
-=begin
-    if ENV['HOME'] == '/app'
-#      require 'rubypython'
-#      RubyPython.start(:python_exe => "python2.6")
-      RubyPython.start( python_exe: "python" )
-    end
-=end
-#    RubyPython.start( python_exe: "python" )
   end
 end
