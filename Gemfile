@@ -36,7 +36,7 @@ gem 'jquery-rails'
 
 # For Heroku
 gem 'thin'
-
+ # For Heroku
 group :production do
   gem 'pg'
 end
@@ -56,5 +56,5 @@ end
 
 # For Markdown
 gem 'redcarpet'
-gem "pygments.rb"  # => 0.2.3
-gem "rubypython", "0.5.1"
+gem "pygments.rb"          # => 0.2.3
+gem "rubypython", "0.5.1"  # For Heroku
